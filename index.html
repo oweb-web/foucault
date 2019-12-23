@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FOUCAULT 푸코</title>
+  <!-- 웹폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FontAwesome(폰트 아이콘) -->
+  <script src="https://kit.fontawesome.com/42bc809b80.js" crossorigin="anonymous"></script>
+  <!-- bx slider CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- bx slider JS -->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- 사용자 자바스크립트 -->
+  <script src="js/main.js"></script>
+  <!-- 상품데이터 자바스크립트 -->
+  <script src="js/date.js"></script>
+</head>
+
+<body>
+  <header id="main_header">
+    <div class="container">
+      <h1>
+        <a href="./index.html">
+          <img src="images/h1_logo.jpg" alt="푸코">
+        </a>
+      </h1>
+      <!-- 검색창 -->
+      <form id="search_box">
+        <input type="text" placeholder="원룸 가구의 정석! 두닷& 두닷모노 ">
+        <button type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <!-- 유틸리티 메뉴 -->
+
+    </div><!-- end container-->
+  </header>
+
+  <!-- 메인 GNB -->
+  <nav id="main_gnb">
+    <div class="container">
+      <button id="category_btn">
+        <i class="fas fa-bars"></i>
+        <span>카테고리</span>
+      </button>
+
+      <ul>
+        <li><a href="#">1인가구</a></li>
+        <li><a href="#">신혼가구</a></li>
+        <li><a href="#">반려동물</a></li>
+        <li><a href="#">가전</a></li>
+        <li><a href="#">베스트</a></li>
+        <li><a href="#">특가</a></li>
+        <li><a href="#">결산sale</a></li>
+        <li><a href="#">기획전</a></li>
+      </ul>
+
+      <nav id="util_menu">
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+        <a href="#"><i class="fas fa-dolly-flatbed"></i></a>
+        <a href="#"><i class="fas fa-heart"></i></a>
+      </nav>
+    </div><!-- end container -->
+
+  </nav>
+
+  <nav id="category">
+    <div class="container">
+      <dl>
+        <dt><a href="#">가구</a></dt>
+        <span></span>
+        <dd><a href="#">소파/거실가구</a></dd>
+        <dd><a href="#">침실가구</a></dd>
+        <dd><a href="#">드레스룸</a></dd>
+        <dd><a href="#">주방가구</a></dd>
+        <dd><a href="#">학생/서재가구</a></dd>
+        <dd><a href="#">수납가구</a></dd>
+        <dd><a href="#">테이블</a></dd>
+        <dd><a href="#">의자/스툴</a></dd>
+        <dd><a href="#">유아동가구</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="#">패브릭</a></dt>
+        <span></span>
+        <dd><a href="#">침구</a></dd>
+        <dd><a href="#">카페트/러그</a></dd>
+        <dd><a href="#">커튼/블라인드</a></dd>
+        <dd><a href="#">홈패브릭</a></dd>
+        <dd><a href="#">주방패브릭</a></dd>
+        <dd><a href="#">쿠션/방석</a></dd>
+        <dd><a href="#">공예/취미</a></dd>
+        <dd><a href="#">유아동패브릭</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="#">홈데코</a></dt>
+        <span></span>
+        <dd><a href="#">조명</a></dd>
+        <dd><a href="#">시계</a></dd>
+        <dd><a href="#">플라워/식물</a></dd>
+        <dd><a href="#">홈갤러리</a></dd>
+        <dd><a href="#">월데코/장식</a></dd>
+        <dd><a href="#">캔들/디퓨저</a></dd>
+        <dd><a href="#">장식소품</a></dd>
+        <dd><a href="#">데스크/디자인문구</a></dd>
+        <dd><a href="#">크리스마스</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="#">수납정리</a></dt>
+        <span></span>
+        <dd><a href="#">수납장/서랍장</a></dd>
+        <dd><a href="#">리빙박스</a></dd>
+        <dd><a href="#">바구니/바스켓</a></dd>
+        <dd><a href="#">행거</a></dd>
+        <dd><a href="#">선반</a></dd>
+        <dd><a href="#">옷걸이/옷정리</a></dd>
+        <dd><a href="#">화장대/테이블정리</a></dd>
+        <dd><a href="#">현관/신발정리</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="#">생활용품</a></dt>
+        <span></span>
+        <dd><a href="#">욕실용품</a></dd>
+        <dd><a href="#">수건/타월</a></dd>
+        <dd><a href="#">청소용품</a></dd>
+        <dd><a href="#">세탁용품</a></dd>
+        <dd><a href="#">생필품</a></dd>
+        <dd><a href="#">생활잡화</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="#">DIY 셀프시공</a></dt>
+        <span> </span>
+        <dd><a href="#">페인트/부자재</a></dd>
+        <dd><a href="#">바닥재</a></dd>
+        <dd><a href="#">목재</a></dd>
+        <dd><a href="#">공구</a></dd>
+        <dd><a href="#">몰딩/걸레받이</a></dd>
+        <dd><a href="#">가구부속품</a></dd>
+        <dd><a href="#">손잡이/방문/유리</a></dd>
+        <dd><a href="#">접착제/보수용품</a></dd>
+        <dd><a href="#">수도/전기</a></dd>
+      </dl>
+
+    </div>
+    <!--end container-->
+  </nav>
+
+  <!-- 메인 배너 -->
+  <section id="main_banner">
+    <div class="inner">
+      <div class="bx-slider">
+        <img class="img_responsive" src="images/banner001.jpg" alt="1" title="여기에 배너 설명글을 작성">
+        <img class="img_responsive" src="images/banner002.jpg" alt="2">
+        <img class="img_responsive" src="images/banner003.jpg" alt="3">
+      </div>
+    </div><!-- end inner -->
+  </section>
+
+  <!-- 메인 콘텐츠 -->
+  <section id="top_seller">
+    <div class="container">
+      <!-- end container-->
+      <h2>BEST SELLER</h2>
+      <ul class="item_list1">
+        <!--<li>
+           <a href="#">
+            <div class="img_wrap">
+              <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            </div>
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="img_wrap">
+              <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            </div>
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="img_wrap">
+              <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            </div>
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="img_wrap">
+              <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            </div>
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="img_wrap">
+              <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            </div>
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a> 
+        </li>-->
+      </ul>
+    </div><!-- end container-->
+  </section>
+  <section id="bottom_seller">
+    <div class="container">
+      <!-- end container-->
+      <h2>RECOMMEND ITEMS</h2>
+      <ul class="item_list2">
+        <!--<li>
+           <a href="#">
+            <div class="img_wrap">
+              <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            </div>
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="img_wrap">
+              <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            </div>
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="img_wrap">
+              <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            </div>
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="img_wrap">
+              <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            </div>
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="img_wrap">
+              <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            </div>
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a> 
+        </li>-->
+      </ul>
+    </div><!-- end container-->
+  </section>
+
+  <!-- 브랜드 추천 -->
+  <section id="brand">
+    <div class="container">
+      <!-- end container -->
+      <h2>기획전</h2>
+      <ul>
+        <li>
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <!-- <span class="title">Laurel</span> -->
+            <!-- <i class="far fa-heart"></i> -->
+            <ul class="hash_tag">
+              <li>#개성넘치는</li>
+              <li>#빈티지</li>
+              <li>#베스트아이템</li>
+              <li>#오크원목자연주의</li>
+            </ul>
+            <ul class="text">
+              <!-- <li class="subject"><span>까사미아</span></li> -->
+              <li>
+                <h4>까사미아 런칭 기념 기획전</h4>
+              </li>
+              <li class="day"><span>11.18~12.31</span></li>
+            </ul>
+          </a>
+        </li>
+        <li>
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <!-- <span class="title">Laurel</span> -->
+            <!-- <i class="far fa-heart"></i> -->
+            <ul class="hash_tag">
+              <li>#레트로와</li>
+              <li>#모던의</li>
+              <li>#조화</li>
+              <li>#합리적인가격대</li>
+              <li>#최저가</li>
+            </ul>
+            <ul class="text">
+              <!-- <li class="subject"><span>매스티지데코</span></li> -->
+              <li>
+                <h4>매스티지데코 신상품 출시 세일</h4>
+              </li>
+              <li class="day"><span>10.21~12.5</span></li>
+            </ul>
+          </a>
+        </li>
+        <li>
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <!-- <i class="far fa-heart"></i> -->
+            <ul class="hash_tag">
+              <li>#고딕스타일</li>
+              <li>#클래식한무드</li>
+              <li>#1970년대감성</li>
+              <li>#독특한디자인</li>
+            </ul>
+            <ul class="text">
+              <!-- <li class="subject"><span>매스티지데코</span></li> -->
+              <li>
+                <h4>오투가구 모음전</h4>
+              </li>
+              <li class="day"><span>11.18~12.31</span></li>
+            </ul>
+          </a>
+        </li>
+
+      </ul>
+    </div><!-- end container -->
+  </section>
+
+  <!-- 푸터 -->
+  <div class="footer_wrap">
+    <footer id="main_footer">
+      <h1><img src="images/f1_logo.png" alt="footer_logo"></h1>
+
+      <div class="line"></div>
+      <div class="footer_menu">
+        <a href="#">이용약관멤버십&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="#"><strong> &nbsp;&nbsp;&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;&nbsp;&nbsp;</strong></a>
+        <a href="#">|&nbsp;&nbsp;&nbsp;&nbsp;임직원서비스&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="#"> &nbsp;&nbsp;&nbsp;&nbsp;이용약관&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;고객센터</a>
+      </div>
+      <div class="line"></div>
+      <p class="first">(주)푸코<span> 사업자등록번호 119-86-91245</span> 대표이사 공주영</p>
+      <address>서울특별시 서초구 서초대로 399 플래티넘타워 23층</address>
+      <p>통신판매업신고번호<span>2018-서울서초-0580호</span></p>
+      <p>NICEPAY 안전거래 서비스 고객님의 안전거래를 위해 현금 결제 시, 저희 사이트에서 가입한 구매안전서비스를 이용할 수 있습니다.</span></p>
+      <p class="copyright">COPYRIGHT &copy; 2019 FOUCAULT INC. ALL RIGHTS RESERVED.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
