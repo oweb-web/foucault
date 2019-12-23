@@ -340,51 +340,64 @@ body {
  text-decoration: none;
 }
 
-
-/* 브랜드 추천 기획전*/
+/* 브랜드 추천 */
 #brand {
   text-align: center;
   padding: 100px 0;
   overflow: hidden;
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
 }
 #brand h2 {
   margin-bottom: 50px;
   font-size: 24px;  
 }
-#brand .container > ul > li {
+#brand .container ul.brand-slider > li > a {
+  display: block;
+  height: 455px;
+  /* outline: 1px solid red; */
+  color: #fff;
+}
+
+/* #brand .container .bx-viewport{
+  outline: 1px solid red;
+} */
+#brand .container ul.brand-slider > li {
   position: relative;
   /* outline: 1px solid green; */
-  width: 366.66px;
+  width: 366.66px !important;
   height: 445px;
   float: left;
-  margin-right: 50px;
-  padding-bottom: 20px;
+  margin-right: 54px;
+  padding-bottom: 20px; 
+  /* background: #efefef; */
+  /* box-shadow: 0px 0px 8px rgba(0,0,0,0.2); */
+  /* border: 1px solid #eee; */
 }
-#brand ul > li:last-child{ 
+#brand ul.brand-slider > li:last-child{ 
   margin-right: 0;
 }
 
 /* 브랜드 목록 배경이미지 */
-#brand > .container > ul > li:nth-child(1) {
+#brand ul.brand-slider > li[data-num='1'] {
   /* 이미지 높이값: 340px */
   background-image: url("../images/event001.jpg");
   background-repeat: no-repeat;
-  
 }
-#brand > .container > ul > li:nth-child(2) {
-  /* 이미지 높이값: 340px */
+#brand ul.brand-slider > li[data-num='2'] {
   background-image: url("../images/event002.jpg");
   background-repeat: no-repeat;
 }
-#brand > .container > ul > li:nth-child(3) {
-  /* 이미지 높이값: 340px */
+#brand ul.brand-slider > li[data-num='3'] {
   background-image: url("../images/event003.jpg");
   background-repeat: no-repeat;
 }
+#brand ul.brand-slider > li[data-num='4'] {
+  background-image: url("../images/event004.jpg");
+  background-repeat: no-repeat;
+}
 
-/* 브랜드 배너 텍스트 위치 */
-#brand .container > ul > li > a{
+/* 브랜드 배너 텍스트 배치 */
+#brand .container ul.brand-sliderl > li > a {
   color: #fff;
 }
 #brand .container .hash_tag {
@@ -396,40 +409,32 @@ body {
   width: auto;
   margin-bottom: 6px;
   padding: 8px;
-  background: rgba(0, 0, 0, 0.4);
+  background:rgba(0,0,0, 0.3);
   display: inline-block;
+
 }
 #brand .container .text {
   position: absolute;
   width: 100%;
   left: 0; bottom: 0;
-  color: #444444;
+  color: #444;
   text-align: center;
   /* outline: 1px solid red; */
   margin-bottom: 20px;
 }
 #brand .container .text > li {
-  line-height: 2em;
+  line-height: 1.8em;
 }
 #brand .container .text h4:hover{
   color: #8775a0;
 }
-/*#brand .container .text .subject {
-  border: 1px solid #444;
-  width: 5em;
-  display: inline-block;
-  border-radius: 12px;
-  font-size: 12px;
-  margin-bottom: 5px;
-}*/
 
-#brand .container .text .day{
-  color: #666666;
+#brand .container .text .day {
+  color: #666;
 }
-#brand .container .text h4{
+#brand .container .text h4 {
   font-size: 20px;
 }
-
 
 /* 푸터 */
 .footer_wrap{
