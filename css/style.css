@@ -111,13 +111,13 @@ body {
 
 #main_gnb ul {
   float: left;
-  margin-left: 38px;
-  height: 57px;
+  margin-left: 15px;
+  height: 55px;
   /* outline: 1px solid green; */
 }
 #main_gnb ul > li { 
   display: inline-block;
-  margin-right:20px;
+  margin-right:30px;
   margin-left: 20px;
 }
 #main_gnb ul > li:hover a{
@@ -135,7 +135,7 @@ body {
   margin-left: 33px;
 }
 #main_gnb #util_menu > a {
-  margin-left: 6px;
+  margin-left: 10px;
   color: rgba(74, 72, 72, 0.7);
 }
 #main_gnb #util_menu a:hover{
@@ -248,11 +248,10 @@ body {
   transition: 0.3s;
 }
 #top_seller ul > li .title {
-  font-size: 14px;
+  font-size: 16px;
   display: block;
   font-weight: bold;
-  margin-top: 0.8em;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.8em;
 }
 #top_seller ul > li .name {
   font-size: 17px;
@@ -269,7 +268,7 @@ body {
   font-size: 14px;
   display: block;
   color: #999;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.2em;
 }
 
 #top_seller ul > li .sale_price {
@@ -312,11 +311,10 @@ body {
   transition: 0.3s;
 }
 #bottom_seller ul > li .title {
-  font-size: 14px;
+  font-size: 16px;
   display: block;
   font-weight: bold;
-  margin-top: 0.8em;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.8em;
 }
 #bottom_seller ul > li .name {
   font-size: 17px;
@@ -333,12 +331,13 @@ body {
   font-size: 14px;
   display: block;
   color: #999;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.2em;
 }
 
 #bottom_seller ul > li .sale_price {
  text-decoration: none;
 }
+
 
 /* 브랜드 추천 */
 #brand {
@@ -358,9 +357,9 @@ body {
   color: #fff;
 }
 
-/* #brand .container .bx-viewport{
-  outline: 1px solid red;
-} */
+#brand .container .bx-viewport{
+  /* outline: 1px solid red; */
+}
 #brand .container ul.brand-slider > li {
   position: relative;
   /* outline: 1px solid green; */
@@ -369,7 +368,7 @@ body {
   float: left;
   margin-right: 54px;
   padding-bottom: 20px; 
-  /* background: #efefef; */
+  background: #efefef;
   /* box-shadow: 0px 0px 8px rgba(0,0,0,0.2); */
   /* border: 1px solid #eee; */
 }
@@ -392,7 +391,7 @@ body {
   background-repeat: no-repeat;
 }
 #brand ul.brand-slider > li[data-num='4'] {
-  background-image: url("../images/event004.jpg");
+  background-image: url("../images/event003.jpg");
   background-repeat: no-repeat;
 }
 
@@ -409,7 +408,7 @@ body {
   width: auto;
   margin-bottom: 6px;
   padding: 8px;
-  background:rgba(0,0,0, 0.3);
+  background:rgba(0,0,0, 0.4);
   display: inline-block;
 
 }
