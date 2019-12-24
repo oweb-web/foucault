@@ -66,24 +66,29 @@ $(function(){
 
 
   // BX슬라이더
-  $('.bx-slider').bxSlider({
-    // 여기에 옵션 설정
-    mode: 'horizontal',     // 효과설정
-    auto: false,             // 자동재생
-    easing: "ease-in-out",  // 가속도(timing-function)
-    pause: 4000,            // 정지시간(대기)
-    controls: false,        // prev, next 표시/비표시
-    pager: true,           // 하단 인디케이터 표시/비표시
-    responsive: false,     // 끄지 않으면 가변으로 움직인다(지금 베너는 고정 시켜뒀기 때문에 끔.)
-  });
 
-  $('.brand-slider').bxSlider({
-    pager: false,           // 하단 인디케이터 표시/비표시
-    responsive: false,
-    slideWidth: 1200,
-    minSlides: 3,
-    maxSlides: 3,
-    moveSlides: 1,
-  }); 
+  $('#container').imagesLoaded( function() {
+    // BX슬라이더
+   $('.bx-slider').bxSlider({
+     // 여기에 옵션 설정
+     mode: 'horizontal',     // 효과설정
+     auto: true,             // 자동재생
+     easing: "ease-in-out",  // 가속도(timing-function)
+     pause: 4000,            // 정지시간(대기)
+     controls: false,        // prev, next 표시/비표시
+     pager: true,            // 하단 인디케이터 표시/비표시
+     responsive: false,
+     autoHover:true,          // 마우스가 올라가면 재생 정지
+   });
 
-});
+   $('.brand-slider').bxSlider({
+     pager: false,           // 하단 인디케이터 표시/비표시
+     responsive: false,
+     slideWidth: 1200,
+     minSlides: 3,
+     maxSlides: 3,
+     moveSlides: 1,
+   });  
+ });
+
+}); // end$
